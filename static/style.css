@@ -1,0 +1,117 @@
+/* 全体のスタイル */
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* ヘッダー */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 15px 0;
+    text-align: center;
+}
+
+/* サイトタイトル（ヘッダーのh1） */
+.site-title {
+    font-size: 3em;
+    font-weight: bold;
+    margin-bottom: 15px;
+    text-align: center;
+    /* 下線なし！ */
+}
+
+/* コンテナ（本文＋サイドバーの親） */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+/* メインコンテンツ */
+.main-content {
+    flex: 3;
+}
+
+/* 記事タイトル（本文内h1） */
+.main-content h1 {
+    font-size: 2.5em;
+    font-weight: bold;
+    margin-bottom: 15px;
+    text-align: center;
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 10px;
+}
+
+/* サイドバー */
+.sidebar {
+    width: 200px; /* ←ここで幅を固定！ */
+    background-color: #ffffff;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 0 8px rgba(0,0,0,0.1);
+}
+
+/* サイドバー内リスト */
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar li {
+    margin-bottom: 10px;
+}
+
+.sidebar a {
+    text-decoration: none;
+    color: #333;
+}
+
+.sidebar a:hover {
+    text-decoration: underline;
+}
+
+/* セクション見出し（h2） */
+h2 {
+    font-size: 1.5em;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+/* フッター */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+
+/* レスポンシブ対応 */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+}
+
+code {
+    color: #333;
+}
+.prompt-block {
+    background-color: #f8f8f8;
+    border: 2px solid #cccccc; /* ← ここで枠線を付けている！ */
+    border-radius: 8px;
+    padding: 15px;
+    font-family: Consolas, 'Courier New', monospace;
+    font-size: 1.1em;
+    color: #333;
+    overflow-x: auto;
+    margin: 20px 0;
+}
